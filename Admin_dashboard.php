@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>Admin Dashboard</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="AdminDashboard.css">
+	<link rel="stylesheet" type="text/css" href="Admin_dashboard-style.css">
 	<link rel="stylesheet" type="text/css" href="Admin_popup-style.css">
 	<link rel="stylesheet" type="text/css" href="Admin_modal-css.css">
     <link rel="stylesheet" type="text/css" href="Admin_calendar.css"/>
@@ -202,9 +202,9 @@
 
 </div>
 	<script type="text/javascript"></script>
-	<script src="modal-btn1.js"></script>
-	<script src="modal-btn2.js"></script>
-	<script src="modal-btn3.js"></script>
+	<script src="Admin_modal-btn1.js"></script>
+	<script src="Admin_modal-btn2.js"></script>
+	<script src="Admin_modal-btn3.js"></script>
 </body>
 </html>
 

@@ -1,3 +1,4 @@
+//PLEASE KNOW THIS WONT WORK WITHOUT CONNECTION TO CALENDAR PHP
 <!DOCTYPE html>
 <?php include("dataconnection.php");?>
 <html>

@@ -1,0 +1,134 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e7e7e7;
+	height: 100vh;
+}
+h3 {
+	text-align: center;
+	color: #413b3b;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-family: 'Zen Tokyo Zoo', cursive;
+}
+h5 {
+	text-align: center;
+	color: #82807f;
+	margin: 50px auto;
+	font-size: 20px;
+	width: 50%;
+	line-height: 1.7;
+}
+.box {
+	text-align: center;
+}
+.button {
+	font-size: 1em;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background: #403e3d;
+	border-radius: 100px;
+}
+.button:hover{
+	background: #c19c82;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	overflow: hidden;
+}
+.overlay:hover{
+	overflow-y: auto;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+}
+
+/*form*/
+
+.container {
+	border-radius: 5px;
+	background-color: #e7e7e7;
+	padding: 20px;
+}
+form label {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+input[type=text], select, input[type=int] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=date], input[type=int]
+{
+	width: fit-content;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type="submit"] {
+	background-color: #30475E;
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+	border: none;
+	width: fit-content;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 40%;
+}
+
+/*minimalistic design for scrollbar*/
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: gainsboro;
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

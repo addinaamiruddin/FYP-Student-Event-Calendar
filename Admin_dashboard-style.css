@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+body{
+	overflow-x: hidden;
+	background-color: #F5F5F5;
+}
+.container_main {
+	position: relative;
+	width: 100%;
+	background: none;
+}
+.navigation{
+	position:fixed;
+	width: 300px;
+	top: 0px;
+	margin-left: 30px;
+	height: 100%;
+	background: none;
+	transition: 0.5s;
+	float: left;
+}
+.calendar-main
+{
+	width: 100%;
+	float: right;
+	height: 100%;
+	left: 10%;
+	padding: 20px;
+	background: none;
+	position: fixed;
+	transition: 0.5s;
+	overflow: hidden;
+}
+.navigation.active{
+	width: 60px;
+}
+.navigation ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.navigation ul li{
+	position: relative;
+	width:fit-content;
+	list-style: none;
+	width: fit-content;
+	padding: 15px;
+}
+
+.navigation ul li:nth-child(1){
+	margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover{
+	background: transparent;
+}
+.navigation ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: black;
+}
+.navigation ul li a .icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.navigation ul li a .icon .fa{
+	color: black;
+	font-size: 24px;
+}
+.navigation .title{
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 20px;
+	height: 60px;
+	line-height: 60px;
+	white-space: nowrap;
+}
+.main{
+	
+	width: 100%;
+	background: white;
+
+}
+.main.active{
+	width: calc(100% - 60px);
+	left: 60px;
+}
+.main .topbar{
+	width: 100%;
+	background: #30475E;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.toggle{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+.toggle:before{
+	content: '\f0c9';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+}
+.search{
+	position: absolute;
+	display: flex;
+	padding: 10px;
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 450px;
+}
+.search label{
+	position: relative;
+	width: 100%;
+}
+.search label input{
+	width: 90%;
+	height: 40px;
+	border-radius: 40px;
+	padding: 5px 20px;
+	padding-left: 35px;
+	letter-spacing: 0.3em;
+	text-align: center;
+	text-transform: uppercase;
+	outline: none;
+	background: #F5F5F5;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.search label .fa{
+	position: absolute;
+	left: 20px;
+	top: 16.5px;
+}
+
+h2{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+

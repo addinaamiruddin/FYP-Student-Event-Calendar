@@ -1,0 +1,125 @@
+html, body 
+{
+    height: 100%;
+}
+body 
+{
+    position: relative;
+    background-image: url("loginBACKGROUND.jpg");
+    background-size: 100% 720px;
+}
+
+*, *::before, *::after 
+{
+    box-sizing: border-box;
+    
+}
+ 
+.container
+{
+	width: 500px;
+	height: 450px;
+	text-align: center;
+	margin-top: 120px;
+    margin-left: -60px;
+    
+}
+
+.container img
+{
+	width: 150px;
+	height: 150px;
+	margin-top: -60px;
+}
+
+input[type="text"],input[type="password"]
+{
+	margin-top: 30px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 40px;
+}
+
+.form-input::before
+{
+	content: ""; /* Nanti nak insert Icon */ 
+	font-family: "FontAwesome";
+	padding-left: 07px;
+	padding-top: 40px;
+	position: absolute;
+	font-size: 35px;
+	color: #2980b9; 
+}
+
+.form-input:nth-child(2)::before
+{
+	content: ""; /* Nanti nak insert Icon */ 
+}
+
+.btn-login
+{
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}
+
+.box, .box::before, .box::after 
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.box 
+{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    border:4px solid #fff;
+    background-color: #B0E0E6;
+}
+
+.box::before, .box::after 
+{
+    content: '';
+    z-index: -1;
+    margin: -4%;
+    box-shadow: inset 0 0 0 7px;
+    animation: clipMe 8s linear infinite;
+}
+
+.box::before 
+{
+    animation-delay: -4s;
+}
+
+.box:hover:
+{
+    background-color: rgba(255, 0, 0, .3);
+}
+
+@keyframes clipMe 
+{
+    0%, 100% {
+        clip: tri(0px, 220px, 3px, 0px);
+        color: #008080;
+   }
+    25% {
+        clip: tri(0px, 2px, 220px, 0px);
+        color: #20B2AA;
+   }
+    50% {
+        clip: tri(218px, 220px, 220px, 0px);
+        color: #32CD32;
+   }
+    75% {
+        clip: tri(0px, 220px, 220px, 218px);
+        color: yellowgreen;
+   }
+}
